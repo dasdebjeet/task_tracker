@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Code some daily shit 👨‍💻",
+      "day": "Oct 6th at 5:30pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Exercise 🏋️‍♂️",
+      "day": "Oct 6th for 1hr",
+      "reminder": true
+    },
+    {
+      "text": "Sleep, code and repeat",
+      "day": "all day",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}
