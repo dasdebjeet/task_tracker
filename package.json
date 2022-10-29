@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "json:server": "json-server --watch db.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

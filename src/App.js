@@ -26,7 +26,7 @@ function App() {
 
   // Fetch Task
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:9090/tasks')
+    const res = await fetch('https://my-json-server.typicode.com/dasdebjeet/task_tracker/tasks')
     const data = await res.json()
 
     return data
@@ -34,7 +34,7 @@ function App() {
 
   // Fetch single Task
   const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:9090/tasks/${id}`)
+    const res = await fetch(`https://my-json-server.typicode.com/dasdebjeet/task_tracker/tasks/${id}`)
     const data = await res.json()
 
     return data
@@ -45,7 +45,7 @@ function App() {
     const taskToToggle = await fetchTask(id)
     const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
     
-    const res = await fetch(`http://localhost:9090/tasks/${id}`,
+    const res = await fetch(`https://my-json-server.typicode.com/dasdebjeet/task_tracker/tasks/${id}`,
       {
         method: 'PUT',
         headers: { 'Content-type': 'application/json' },
@@ -60,7 +60,7 @@ function App() {
 
   //Add Task
   const addTask = async (task) => {
-    const res = await fetch(`http://localhost:9090/tasks`,
+    const res = await fetch(`https://my-json-server.typicode.com/dasdebjeet/task_tracker/tasks`,
       {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
@@ -79,7 +79,7 @@ function App() {
 
   // Delete Task
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:9090/tasks/${id}`, {method: 'DELETE'})
+    await fetch(`https://my-json-server.typicode.com/dasdebjeet/task_tracker/tasks/${id}`, {method: 'DELETE'})
     setTasks(tasks.filter((task)=>task.id !== id))
   }
 
