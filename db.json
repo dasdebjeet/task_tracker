@@ -17,6 +17,12 @@
       "day": "all day",
       "reminder": false,
       "id": 3
+    },
+    {
+      "text": "Go to Uni",
+      "day": "Mon - Fri Daily",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
